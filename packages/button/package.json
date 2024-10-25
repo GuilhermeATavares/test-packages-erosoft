@@ -1,5 +1,5 @@
 {
-  "name": "@test-packages-erosoft/button",
+  "name": "@guilhermeatavares/test-packages-erosoft-button",
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
