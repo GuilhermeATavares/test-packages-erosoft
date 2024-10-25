@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
-          scope: '@GuilhermeATavares'
+          scope: '@guilhermeatavares'
       - run: npm install
       - run: npx turbo run build
       - name: Publish each package
