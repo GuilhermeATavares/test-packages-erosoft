@@ -13,13 +13,17 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
           scope: '@test-packages-erosoft'
+
       - run: npm install
-      - run: npm run build
+
+      - run: npx turbo run build
+
       - name: Publish each package
         run: |
           for dir in ./packages/*; do
